@@ -1,13 +1,224 @@
-<html>
-
+<!DOCTYPE html>
+<html lang="en">
 <head>
-  test head ... ...
-  ...
+    <meta charset="UTF-8">
+    <title>Homepage of Peng Xu</title>
+    <style>
+        h1 { padding : 0; margin : 0; }
+        body { padding : 0; font-family: "Helvetica"; font-size : 1rem; background-color : #EFEFEF; }
+        #container { max-width : 1000px; min-width: 300px;  margin : 20px auto;  background-color : #fff; padding : 50px; border : 1px solid #ccc; position: relative; }
+        li {
+            margin-right: 13rem;
+            padding-bottom: 10px;
+        }
+        h3 {
+            font-size: 2rem;
+        }
+        h4 {
+            font-size: 1.6rem;
+        }
+        .portrait {
+            overflow: hidden;
+        }
+        .portrait {
+            width: 12rem;
+            position: absolute;
+            top: 50px;
+            right: 50px;
+        }
+        .portrait img {
+            width: 100%;
+        }
+        .item {
+            margin-right: 12rem;
+        }
+        .item p {
+            line-height: 1.4rem;
+            font-size: 1rem;    
+            padding-left: 2px;
+        }
+        .papers img {
+            display: block;
+            width: 24%;
+            float: left;
+            border-radius: 8px;
+            -moz-box-shadow: 3px 3px 6px #888;
+            -webkit-box-shadow: 3px 3px 6px #888;
+            box-shadow: 3px 3px 6px #888;
+            margin-left: 5px;
+        }
+        .papers p {
+            width: 96%;
+            float: left;
+            top: 0px;
+            margin: 0px;
+            padding-left: 10px;
+            padding-top: 10px;
+            font-size: 1rem !important;
+        }
+        .photos {
+            width: 100%;
+            overflow: hidden;
+            margin-top:30px;
+        }
+        .photos .person_item {
+            width: 48%;
+        }
+        .photos .person_item p {
+            padding-left: 2rem;
+        }
+        .photos .person_item_left {
+            float: left;
+        }
+        .photos .person_item_right {
+            float: right;
+        }
+        .photos .person_item img {
+            width: 100%;
+        }
+        
+        .papers {
+            outline: thin dotted #666666;
+            margin-bottom: 15px;
+            margin-left: 10px;
+            padding: 10px 0px;
+            overflow: hidden;
+        }
+
+    </style>
 </head>
-
 <body>
-  test body ... ...
-  ...
-</body>
+    <div id="container">
+        <h1>Peng Xu &nbsp;&nbsp;&nbsp;&nbsp;徐 鹏</h1>
+        <h3 style="padding-left: 15rem;">postdoctoral research fellow</h3>
+        <div class="portrait">
+            <img src="./img/peng.jpg" alt="">
+        </div>
+        <div class="item">
+            <h4>About Me</h4>
+            <p style="text-align:justify; text-justify:inter-ideograph;">A postdoctoral research fellow in School of Computer Science and Engineering, Nanyang Technological University (NTU). My supervisor is <a href="https://www.ntu.edu.sg/home/xbresson/">Prof. Xavier Bresson</a>. My current research is broadly in graph neural network, free-hand sketch recognition and retrieval, cross-modal computing, computer vision, deep learning, and machine learning.</p>
+            <p style="text-align:justify; text-justify:inter-ideograph;">In 2019, I received my Ph.D. degree from <a href="http://www.pris.net.cn/">Pattern Recognition and Intelligent System Laboratory (PRIS)</a> in <a href="http://english.bupt.edu.cn/">Beijing University of Posts and Telecommunications (BUPT)</a>, supervised by <a href="http://www.pris.net.cn/en/jun-guo">Prof. Jun Guo</a>.</p>
+             <p style="text-align:justify; text-justify:inter-ideograph;">During 2017 to 2018, I was a visiting student in <a href="http://sketchx.eecs.qmul.ac.uk/">sketchX Lab</a>, <a href="http://www.eecs.qmul.ac.uk/research/research-groups/computer-vision-research-group/">
+Vision Group</a>, in <a href="http://www.eecs.qmul.ac.uk/">EE&amp;CS</a> in <a href="https://www.qmul.ac.uk/">
+Queen Mary University of London (QMUL)</a>, supervised by <a href="https://www.eecs.qmul.ac.uk/~txiang/">Prof. Tao Xiang</a> and <a href="http://www.eecs.qmul.ac.uk/~yzs/">Dr. Yi-Zhe Song</a>. <a href="http://homepages.inf.ed.ac.uk/thospeda/">Dr. Timothy Hospedales</a> from University of Edinburgh also helps me in research. </p>
+            <p style="text-align:justify; text-justify:inter-ideograph;">I was a visiting student in National Laboratory of Pattern Recognition (NLPR), Institute of Automation, Chinese Academy of Sciences (CASIA), China, during March 2016 to June 2017, supervised by <a href="https://scholar.google.com/citations?user=8kzzUboAAAAJ&amp;hl=zh-CN">Prof. Liang Wang</a>. </p>
+        </div>
+        
+        <div class="item">
+            <h4><font color="red">News</font></h4>
+            <p style="text-align:justify; text-justify:inter-ideograph;"><b>[May, 2020]</b> Was invited as an <b>area chair</b> for multi-media track on <a href="http://www.tencon2020.net/">IEEE TENCON 2020</a></p>
+            <p style="text-align:justify; text-justify:inter-ideograph;"><b>[March, 2020]</b> Released <font color="#000000"><b>TorchSketch</b></font>, the first sketch-oriented open-source deep learning library. <a href="https://github.com/PengBoXiangShang/torchsketch">[code]</a></p>
+            <p style="text-align:justify; text-justify:inter-ideograph;"><b>[Jan 8, 2020]</b> Released my paper <font color="#000000"><b>"Deep Learning for Free-Hand Sketch: A Survey"</b></font> on arXiv. <a href="https://arxiv.org/abs/2001.02600v1">[paper]</a>, <a href="https://github.com/PengBoXiangShang/torchsketch">[code]</a></p>
+            <p style="text-align:justify; text-justify:inter-ideograph;"><b>[Dec 24, 2019]</b> Released our paper <font color="#000000"><b>"Multi-Graph Transformer for Free-Hand Sketch Recognition"</b></font> on arXiv. <a href="https://arxiv.org/abs/1912.11258">[paper]</a>, <a href="https://github.com/PengBoXiangShang/multigraph_transformer">[code]</a></p>
+            <p style="text-align:justify; text-justify:inter-ideograph;"><b>[May 31, 2019]</b> <font color="#000000">Ranked in 8th place in EPIC-Kitchens Action Recognition Challenges @CVPR2019.</font></p>
+            <p style="text-align:justify; text-justify:inter-ideograph;"><b>[May 29, 2019]</b> <font color="#000000">Passed thesis defense with an average score of 92.4/100.</font></p>
+    
+            <p style="text-align:justify; text-justify:inter-ideograph;"><b>[May 14, 2019]</b> Released an unofficial PyToch implementation for <font color="#000000">MobileNetV3 with pretrained model on ImageNet</font>. <a href="https://github.com/PengBoXiangShang/MobileNetV3_PyTorch">[code]</a>. See <a href="https://m.weibo.cn/1402400261/4371976128949774">[link]</a> for media coverage.</p>
+            <p style="text-align:justify; text-justify:inter-ideograph;"><b>[04/2019]</b> Released an unofficial PyToch implementation for <font color="#000000">SiamRPN++ tracker (CVPR2019)</font>. <a href="https://github.com/PengBoXiangShang/SiamRPN_plus_plus_PyTorch">[code]</a>. See <a href="https://m.weibo.cn/status/4366523588472738">[link]</a>, <a href="https://mp.weixin.qq.com/s/AhyXaqPt3TvPh7eox9llDQ">[link]</a>, <a href="https://mp.weixin.qq.com/s/FwvGwRwVdaBEetXefKtibA">[link]</a>, <a href="https://www.codercto.com/a/73899.html">[link]</a> for media coverage. <iframe src="https://ghbtns.com/github-btn.html?user=PengBoXiangShang&amp;repo=SiamRPN_plus_plus_PyTorch&amp;type=star&amp;count=true&amp;size=large" frameborder="0" scrolling="0" width="160px" height="30px"></iframe><iframe src="https://ghbtns.com/github-btn.html?user=PengBoXiangShang&repo=SiamRPN_plus_plus_PyTorch&type=fork&count=true&size=large" frameborder="0" scrolling="0" width="158px" height="30px"></iframe></p>
+            <p style="text-align:justify; text-justify:inter-ideograph;"><b>[04/2018]</b> Passed <b>Juniper JNCIA-Junos</b> exam, in London!</p>
+            <p style="text-align:justify; text-justify:inter-ideograph;"><b>[02/2018]</b> One paper has been accepted as poster by <b>CVPR 2018</b> !</p>
+            <p style="text-align:justify; text-justify:inter-ideograph;"><b>[12/2017]</b> Be a Research Associate (visiting PhD student) in <a href="http://sketchx.eecs.qmul.ac.uk/">sketchX Lab</a>, <a href="http://www.eecs.qmul.ac.uk/research/research-groups/computer-vision-research-group/">Vision Group</a>, in <a href="http://www.eecs.qmul.ac.uk/">EE&CS</a> in <a href="https://www.qmul.ac.uk/">Queen Mary University of London (QMUL)</a> !</p>
+        </div>
+        <div class="item">
+            <h4>Contact Information</h4>
+            <p><b>Address:</b> &nbsp;&nbsp;&nbsp;SCSE, Block N4, Nanyang Avenue, Singapore.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<s>No.10 Xitucheng Road, Haidian District, Beijing, China.</s> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<s>Mile End Road, E1 4NS, London, UK.</s></p>
+            <p><b>Email:</b> &nbsp;&nbsp;&nbsp;<b>peng.xu [AT] ntu.edu.sg</b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<s>peng.xu@bupt.edu.cn</s> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<s>p.xu@qmul.ac.uk</s></p>  
+            <p><b>Links:</b> &nbsp;&nbsp;&nbsp;<a href="https://scholar.google.com/citations?user=9_v4tC0AAAAJ&amp;hl=en"><b>[My Google Scholar profile]</b></a>   &nbsp;&nbsp;&nbsp;&nbsp;<a href="https://github.com/PengBoXiangShang"><b>[My Github profile]</b></a></p>
+            
+            
+        </div>
+        <div class="item">
+            <h4>Selected Publications</h4>
+            <div>
+                <h5>Preprint Papers</h5>
+                <div class="papers">                    
+                    <p style="text-align:justify; text-justify:inter-ideograph;"><b>Peng Xu</b>, et al., "Deep Learning for Free-Hand Sketch: A Survey and A Toolbox", arXiv:2001.02600, 2020. (under review) [<a href="https://arxiv.org/abs/2001.02600">paper</a>] [<a href="https://github.com/PengBoXiangShang/torchsketch">code</a>]</p>
+                </div>
+                
+                <div class="papers">
+                    
+                    <p style="text-align:justify; text-justify:inter-ideograph;"><b>Peng Xu</b>, et al., “Deep Self-Supervised Representation Learning for Free-Hand Sketch”, arXiv:2002.00867, 2020. (under review) [<a href="https://arxiv.org/abs/2002.00867">paper</a>] [<a href="https://github.com/zzz1515151/self-supervised_learning_sketch">code</a>]</p>
+                </div>
+                <div class="papers">
+                    
+                    <p style="text-align:justify; text-justify:inter-ideograph;"><b>Peng Xu</b>, et al., “Fine-Grained Instance-Level Sketch-Based Video Retrieval”, arXiv:2002.09461, 2020. (under review) [<a href="https://arxiv.org/abs/2002.09461">paper</a>]</p>
+                </div>
 
+                <div class="papers">
+                    
+                    <p style="text-align:justify; text-justify:inter-ideograph;"><b>Peng Xu</b>, Chaitanya K. Joshi, Xavier Bresson, “Multi-Graph Transformer for Free-Hand Sketch Recognition”, arXiv:1912.11258, 2019. (under review) [<a href="https://arxiv.org/abs/1912.11258">paper</a>] [<a href="https://github.com/PengBoXiangShang/multigraph_transformer">code</a>]</p>
+                </div>
+
+                <div class="papers">
+                    
+                    <p style="text-align:justify; text-justify:inter-ideograph;"><b>Peng Xu</b>, et al., “Million-Scale Human Sketch Analysis: Fast Retrieval and Zero-Shot Recognition”, 2019. (under review)</p>
+                </div>
+            </div>
+            <div>
+                <h5>Conference Papers</h5>
+
+                <div class="papers">
+                    
+                    <p style="text-align:justify; text-justify:inter-ideograph;">Y. Xie, <b>P. Xu</b>, and Z. Ma. “Deep zero-shot learning for scene sketch”, in ICIP, 2019. (Oral) [<a href="https://arxiv.org/abs/1905.04510">paper</a>]</p>
+                </div>
+                
+                <div class="papers">
+                    
+                    <p style="text-align:justify; text-justify:inter-ideograph;"><b>P. Xu</b>, Y. Huang, T. Yuan, K. Pang, Y.-Z. Song, T. Xiang, T. Hospedales, Z. Ma, J. Guo, “Sketch-Mate: Deep Hashing for Million-Scale Human Sketch Retrieval”, in CVPR, 2018. [<a href = "https://arxiv.org/abs/1804.01401">paper</a>]</p>
+                </div>
+                <div class="papers">
+                    
+                    <p style="text-align:justify; text-justify:inter-ideograph;"><b>P. Xu</b>, Q. Yin, Y. Qi, Y.-Z. Song, Z. Ma, L. Wang, J. Guo, “Instance-level Coupled Subspace Learning for Fine-grained Sketch-based Image Retrieval”, in ECCV workshops, 2016. (Oral) [<a href="https://github.com/PengBoXiangShang/iteration_algorithm_4_GroupL1Norm">code</a>]</p>
+                </div>
+                <div class="papers">
+                    
+                    <p style="text-align:justify; text-justify:inter-ideograph;"><b>P. Xu</b>, K. Li, Z. Ma, Y.-Z. Song, L.Wang, and J. Guo. “Crossmodal subspace learning for sketch-based image retrieval: A comparative study”, in Proceedings of 5th IEEE International Conference on Network Infrastructure and Digital Content (IC-NIDC), 2016. (Best Paper Award)</p>
+                </div>
+    
+            </div>
+            <div>
+                <h5>Journal Papers</h5>
+
+                <div class="papers">
+                    
+                    <p style="text-align:justify; text-justify:inter-ideograph;">J. Feng, <b>P. Xu</b>, S. Pu, K. Zhao, H. Zhang, “Robust Visual Tracking by Embedding Combination and Weighted-Gradient Optimization”, Pattern Recognition, 2020.</p>
+                </div>
+                
+                <div class="papers">
+                    
+                    <p style="text-align:justify; text-justify:inter-ideograph;"><b>P. Xu</b>, Q. Yin, Y. Huang, Y.-Z. Song, Z. Ma, L. Wang, J. Guo, T. Xiang, W.B. Kleijn, “Cross-modal Subspace Learning for Subcategory-level and Instance-level Sketch-based Image Retrieval”, Neurocomputing, 2018. [<a href="https://arxiv.org/abs/1705.09888">paper</a>]</p>
+                </div>
+                
+            </div>
+        </div>
+        <div class="item">
+            <h4>Academic Experience</h4>
+            <p style="text-align:justify; text-justify:inter-ideograph;">Research Assistant (Open Project of NLPR)
+National Laboratory of Pattern Recognition, Chinese Academy of Sciences. 
+March 2016 - June 2017, Beijing, China</p>
+        </div>
+        <div class="item">
+            <h4>Internship Experience</h4>
+            <p><img src="./img/aiqiyi.png" alt="" style="width: 110px;position: relative;bottom: -10px;"><span>iQIYI, Inc.  Software Engineer Intern January 2014 - September 2014 Beijing, China</span></p>
+        </div>
+        <div class="item">
+            <h4>Academic Service</h4>
+            <p>Review for CVPR, ICCV, AAAI, TNNLS, CVIU, etc.</p>
+        </div>
+        <div class="item">
+            <h4>Teaching</h4>
+            <p>ECS797P - Machine Learning for Visual Data Analysis , Spring, 2018, in QMUL.</p>
+        </div>
+        <div class="item">
+            <h4>Selected Computer Certifications</h4>
+            <p>Junos (JNCIA-Junos) (April 2018) <img src="./img/juniper.jpg" alt="" style="width: 80px;position: relative;bottom: -10px;"></p>
+            <p>TCP/IP Protocols     Cisco-CCNA (August 2010) <img src="./img/cisco.png" alt="" style="width: 80px;position: relative;bottom: -10px;"></p>
+            <p>Linux     Redhat-RHCE (February 2011)  <img src="./img/redhat.png" alt=""  style="width: 110px;position: relative;bottom: -10px;"></p>
+        </div>
+        <script type='text/javascript' id='clustrmaps' src='//cdn.clustrmaps.com/map_v2.js?cl=ffffff&w=500&t=tt&d=4nZpC1dASOcZpZwhe3Y0QS74N1jp1-8MpZT2N2BG2_0&co=2d78ad&cmo=3acc3a&cmn=ff5353&ct=ffffff'></script>
+    </div>
+
+
+
+</body>
 </html>
